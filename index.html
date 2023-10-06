@@ -7,19 +7,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #EAD7BB;
-            margin: 0;
-            padding: 0;
+            background-color: #FFEEF4; /
+            color: #333; 
         }
         #container {
             text-align: center;
-            background-color: #BCA37F;
+            background-color: #E4E4D0; 
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
         }
         #table-container {
             display: none;
@@ -28,26 +24,25 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
         }
         table, th, td {
-            border: 1px solid #d3d3d3;
+            border: 1px solid #ccc;
             padding: 10px;
         }
         h1 {
-            color: #333333;
+            color: #333; 
         }
         input[type="text"] {
             padding: 10px;
             width: 100%;
-            border: 1px solid #d3d3d3;
+            border: 1px solid #ccc;
             border-radius: 5px;
             margin-top: 10px;
             font-size: 16px;
         }
         button {
-            background-color: #B5CB99;
-            color: #ffffff;
+            background-color: #a99167; 
+            color: #fff; 
             border: none;
             border-radius: 5px;
             padding: 10px 20px;
@@ -56,7 +51,7 @@
             margin-top: 10px;
         }
         button:hover {
-            background-color: #45a049;
+            background-color: #956a53; 
         }
     </style>
 </head>
@@ -94,7 +89,6 @@
               }
               dataTable.appendChild(headerRow);
 
-              
               data.forEach(function(item) {
                 const dataRow = document.createElement('tr');
                 for (const key in item) {
